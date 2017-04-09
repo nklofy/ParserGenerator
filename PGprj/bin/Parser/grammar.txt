@@ -1,0 +1,21 @@
+//symbols
+Goal stmt_list stmt 
+
+//tokens
+table create select from where update set insert into delete between and join natural left right full outer 
+on order by limit over preceding following partition in not some all union intersect except 
+avg max min sum count group having with as view commit begin atomic end 
+null unique check foreign key references date time timestamp index clob blob type like 
+grant role revoke trigger after of referencing function pivot decode cube rollup 
+e ( ) { } [ ] , . ; eof 
+
+//grammars
+Goal |>
+   stmt_list
+
+stmt_list |>
+   stmt_list stmt
+>| stmt
+
+
+//end

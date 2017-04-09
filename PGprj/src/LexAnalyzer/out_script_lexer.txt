@@ -1,0 +1,9 @@
+reserved :select
+identifier :A
+reserved :from
+identifier :B
+reserved :where
+identifier :c
+oprator :>
+int_number :10
+eof: end of file!
